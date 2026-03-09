@@ -4,12 +4,12 @@ import Link from 'next/link';
 import HeroSearch from '@/components/HeroSearch';
 import FadeIn from '@/components/FadeIn';
 
-// UPDATED DATA: Fixed Mahindra Logo using a PNG thumbnail to bypass SVG hotlink blocks
+// UPDATED DATA: Using Google's Favicon API to guarantee the Mahindra logo never breaks
 const brandsData = [
   { name: "Maruti Suzuki", logo: "https://cdn.simpleicons.org/suzuki/0F172A" },
   { name: "Hyundai", logo: "https://cdn.simpleicons.org/hyundai/0F172A" },
   { name: "Tata", logo: "https://cdn.simpleicons.org/tata/0F172A" },
-  { name: "Mahindra", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mahindra_and_Mahindra_Logo.svg/256px-Mahindra_and_Mahindra_Logo.svg.png" },
+  { name: "Mahindra", logo: "https://www.google.com/s2/favicons?domain=auto.mahindra.com&sz=128" },
   { name: "Toyota", logo: "https://cdn.simpleicons.org/toyota/0F172A" },
   { name: "Kia", logo: "https://cdn.simpleicons.org/kia/0F172A" }
 ];
@@ -328,7 +328,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. TRUST BANNER (UPDATED WITH ICONS) */}
+      {/* 7. TRUST BANNER */}
       <section className="bg-slate-950 text-white py-12">
         <FadeIn direction="up" delay={0.2}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-slate-800">
